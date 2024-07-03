@@ -42,7 +42,6 @@ test('Response Body contains 1', async () => {
 			body: JSON.stringify(requestBody)
 			});
 			responseBody = await response.json();
-			console.log(responseBody)
 		} catch (error) {
 			console.error(error);
 		}

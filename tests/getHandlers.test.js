@@ -3,7 +3,6 @@ const config = require('../config');
 test('Should return a 200 status code', async () => {
     let actualStatusCode;
     const url = `${config.API_URL}/api/v1/kits?cardId=1`;
-    console.log('Fetching URL:', url);
     try {
         const response = await fetch(url);
         actualStatusCode = response.status;
